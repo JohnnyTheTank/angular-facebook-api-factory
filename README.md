@@ -101,8 +101,8 @@ facebookFactory.getPageById({
 
 ## Facebook Graph JSON API
 
-* Doku: https://developers.facebook.com/docs/graph-api
-* Graph Explorer: https://developers.facebook.com/tools/explorer/
+* docs: https://developers.facebook.com/docs/graph-api
+* graph explorer: https://developers.facebook.com/tools/explorer/
 
 
 ## License
