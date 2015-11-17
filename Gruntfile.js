@@ -5,7 +5,7 @@ module.exports = function(grunt) {
         uglify: {
             js: {
                 files : {
-                    'dist/angular-facebook-api-factory.min,js' : ['src/angular-facebook-api-factory.js']
+                    'dist/angular-facebook-api-factory.min.js' : ['src/angular-facebook-api-factory.js']
                 }
             },
             options: {
