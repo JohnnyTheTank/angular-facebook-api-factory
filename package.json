@@ -1,6 +1,6 @@
 {
   "name": "angular-facebook-api-factory",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "angularjs factory for facebook json rest api requests",
   "main": "Gruntfile.js",
   "scripts": {

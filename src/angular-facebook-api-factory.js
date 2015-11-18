@@ -141,7 +141,7 @@ angular.module("jtt_facebook", [])
                 case "eventsFromPageById":
 
                     facebookSearchData.object = {
-                        fields:"id,description,picture{url},end_time,name,cover,category,place,start_time,ticket_uri",
+                        fields:"id,owner,description,picture{url},end_time,name,cover,category,place,start_time,ticket_uri",
                         limit:_params.limit || 20,
                         access_token:_params.access_token,
                     };
