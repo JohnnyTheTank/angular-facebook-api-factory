@@ -65,10 +65,12 @@ angular.module("jtt_facebook", [])
     }])
     .service('facebookSearchDataService', function () {
         this.getApiBaseUrl = function (_params) {
-            var version = "";
+            var version;
 
             if(_params && typeof _params.version !== "undefined") {
                 version = _params.version+"/";
+            } else {
+                version = "v2.5/";
             }
             return "https://graph.facebook.com/"+version;
         };
