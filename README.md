@@ -42,7 +42,7 @@ facebookFactory.getPostsFromPageById({
 
 ```js
 facebookFactory.getPhotosFromPageById({
-    pageId:"<PAGE_ID>"
+    page:"<PAGE>" // ID or name
     limit:"<LIMIT>", // (optional) default: 20
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)

@@ -1,7 +1,7 @@
 {
   "name": "angular-facebook-api-factory",
   "description": "angularjs factory for facebook json rest api requests",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "Gruntfile.js",
   "authors": [
     "Jonathan Hornung"
