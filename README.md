@@ -24,7 +24,7 @@ Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
 
 ```js
 facebookFactory.getPostsFromPageById({
-    pageId:"<PAGE_ID>"
+    pageId:"<PAGE_ID>",
     limit:"<LIMIT>", // (optional) default: 20
     until:"<UNTIL>", // (optional)
     since:"<SINCE>", // (optional)
@@ -42,7 +42,7 @@ facebookFactory.getPostsFromPageById({
 
 ```js
 facebookFactory.getPhotosFromPageById({
-    page:"<PAGE>" // ID or name
+    page:"<PAGE>", // ID or name
     limit:"<LIMIT>", // (optional) default: 20
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
@@ -58,7 +58,7 @@ facebookFactory.getPhotosFromPageById({
 
 ```js
 facebookFactory.getVideosFromPageById({
-    pageId:"<PAGE_ID>"
+    pageId:"<PAGE_ID>",
     limit:"<LIMIT>", // (optional) default: 20
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
@@ -74,7 +74,7 @@ facebookFactory.getVideosFromPageById({
 
 ```js
 facebookFactory.getEventsFromPageById({
-    pageId:"<PAGE_ID>"
+    pageId:"<PAGE_ID>",
     limit:"<LIMIT>", // (optional) default: 20
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
@@ -90,7 +90,7 @@ facebookFactory.getEventsFromPageById({
 
 ```js
 facebookFactory.getPageById({
-    pageId:"<PAGE_ID>"
+    pageId:"<PAGE_ID>",
     access_token:"<ACCESS_TOKEN>"
 }).success(function (_data) {
     //on success
