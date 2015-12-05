@@ -1,7 +1,7 @@
 var app = angular.module("app", ['jtt_facebook']);
 app.controller('controller', ['$scope', 'facebookFactory', function($scope, facebookFactory) {
 
-    var _acces_token = "<YOUR_FACEBOOK_ACCESS_TOKEN>"
+    var _acces_token = "<YOUR_FACEBOOK_ACCESS_TOKEN>";
 
     facebookFactory.getPostsFromPageById({
         page:"147615681968982",
