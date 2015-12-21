@@ -89,17 +89,19 @@ angular.module("jtt_facebook", [])
         this.getNew = function (_type, _params) {
 
             var facebookSearchData = {
-                object: {},
+                object: {
+                    access_token:_params.access_token || undefined,
+                },
                 url: "",
             };
 
+            if (typeof _params.limit !== "undefined") {
+                facebookSearchData.object.limit = _params.limit;
+            }
+
             switch (_type) {
                 case "postsFromPageById":
-                    facebookSearchData.object = {
-                        fields:"id,message,story,created_time,full_picture,from,link,description,type,shares,source,picture,object_id",
-                        limit:_params.limit || 20,
-                        access_token:_params.access_token,
-                    };
+                    facebookSearchData.object.fields = "id,message,story,created_time,full_picture,from,link,description,type,shares,source,picture,object_id";
 
                     facebookSearchData = this.fillDataInObjectByList(facebookSearchData, _params, [
                         '__paging_token', 'until', 'since', '__previous'
@@ -110,11 +112,7 @@ angular.module("jtt_facebook", [])
 
                 case "photosFromPageById":
 
-                    facebookSearchData.object = {
-                        fields:"id,created_time,from,link,picture,album,name,images",
-                        limit:_params.limit || 20,
-                        access_token:_params.access_token,
-                    };
+                    facebookSearchData.object.fields = "id,created_time,from,link,picture,album,name,images";
 
                     facebookSearchData = this.fillDataInObjectByList(facebookSearchData, _params, [
                         'before', 'after'
@@ -125,11 +123,7 @@ angular.module("jtt_facebook", [])
 
                 case "videosFromPageById":
 
-                    facebookSearchData.object = {
-                        fields:"id,created_time,from,description,source,picture,format,title,embed_html,permalink_url",
-                        limit:_params.limit || 20,
-                        access_token:_params.access_token,
-                    };
+                    facebookSearchData.object.fields = "id,created_time,from,description,source,picture,format,title,embed_html,permalink_url";
 
                     facebookSearchData = this.fillDataInObjectByList(facebookSearchData, _params, [
                         'before', 'after'
@@ -140,11 +134,7 @@ angular.module("jtt_facebook", [])
 
                 case "eventsFromPageById":
 
-                    facebookSearchData.object = {
-                        fields:"id,owner,description,picture{url},end_time,name,cover,category,place,start_time,ticket_uri",
-                        limit:_params.limit || 20,
-                        access_token:_params.access_token,
-                    };
+                    facebookSearchData.object.fields = "id,owner,description,picture{url},end_time,name,cover,category,place,start_time,ticket_uri";
 
                     facebookSearchData = this.fillDataInObjectByList(facebookSearchData, _params, [
                         'before', 'after'
@@ -155,10 +145,9 @@ angular.module("jtt_facebook", [])
 
                 case "pageById":
 
-                    facebookSearchData.object = {
-                        fields:"cover,link,picture{url},username,name",
-                        access_token:_params.access_token,
-                    };
+                    facebookSearchData.object.fields = "cover,link,picture{url},username,name";
+
+                    facebookSearchData.object.limit = undefined;
 
                     facebookSearchData.url = this.getApiBaseUrl()+_params.page+"/";
                     break;

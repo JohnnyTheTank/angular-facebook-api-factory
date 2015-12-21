@@ -15,7 +15,7 @@ Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
     <script src="bower_components/angular-facebook-api-factory/src/angular-facebook-api-factory.js"></script>
     ```
 
-4. Use the factory `facebookFactory`.
+4. Use the factory `facebookFactory`
 
 
 ### factory methods
@@ -25,7 +25,7 @@ Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
 ```js
 facebookFactory.getPostsFromPageById({
     pageId:"<PAGE_ID>",
-    limit:"<LIMIT>", // (optional) default: 20
+    limit:"<LIMIT>", // (optional) valid values: 0-100 | default: 25
     until:"<UNTIL>", // (optional)
     since:"<SINCE>", // (optional)
     __previous:"<PREVIOUS>", // (optional)
@@ -43,7 +43,7 @@ facebookFactory.getPostsFromPageById({
 ```js
 facebookFactory.getPhotosFromPageById({
     page:"<PAGE>", // ID or name
-    limit:"<LIMIT>", // (optional) default: 20
+    limit:"<LIMIT>", // (optional) valid values: 0-100 | default: 25
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
     access_token:"<ACCESS_TOKEN>"
@@ -59,7 +59,7 @@ facebookFactory.getPhotosFromPageById({
 ```js
 facebookFactory.getVideosFromPageById({
     pageId:"<PAGE_ID>",
-    limit:"<LIMIT>", // (optional) default: 20
+    limit:"<LIMIT>", // (optional) valid values: 0-100 | default: 25
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
     access_token:"<ACCESS_TOKEN>"
@@ -75,7 +75,7 @@ facebookFactory.getVideosFromPageById({
 ```js
 facebookFactory.getEventsFromPageById({
     pageId:"<PAGE_ID>",
-    limit:"<LIMIT>", // (optional) default: 20
+    limit:"<LIMIT>", // (optional) valid values: 0-100 | default: 25
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
     access_token:"<ACCESS_TOKEN>"
