@@ -112,7 +112,7 @@ angular.module("jtt_facebook", [])
 
                 case "photosFromPageById":
 
-                    facebookSearchData.object.fields = "id,created_time,from,link,picture,album,name,images";
+                    facebookSearchData.object.fields = "id,created_time,from,link,picture,album,name,images,width,height";
 
                     facebookSearchData = this.fillDataInObjectByList(facebookSearchData, _params, [
                         'before', 'after'
@@ -123,7 +123,7 @@ angular.module("jtt_facebook", [])
 
                 case "videosFromPageById":
 
-                    facebookSearchData.object.fields = "id,created_time,from,description,source,picture,format,title,embed_html,permalink_url";
+                    facebookSearchData.object.fields = "id,created_time,from,description,source,picture,format,title,embed_html,permalink_url,length";
 
                     facebookSearchData = this.fillDataInObjectByList(facebookSearchData, _params, [
                         'before', 'after'
