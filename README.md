@@ -31,9 +31,9 @@ facebookFactory.getPostsFromPageById({
     __previous:"<PREVIOUS>", // (optional)
     __paging_token:"<PAGING_TOKEN>", // (optional)
     access_token:"<ACCESS_TOKEN>"
-}).success(function (_data) {
+}).then(function (_data) {
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
@@ -47,9 +47,9 @@ facebookFactory.getPhotosFromPageById({
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
     access_token:"<ACCESS_TOKEN>"
-}).success(function (_data) {
+}).then(function (_data) {
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
@@ -63,9 +63,9 @@ facebookFactory.getVideosFromPageById({
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
     access_token:"<ACCESS_TOKEN>"
-}).success(function (_data) {
+}).then(function (_data) {
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
@@ -79,9 +79,9 @@ facebookFactory.getEventsFromPageById({
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
     access_token:"<ACCESS_TOKEN>"
-}).success(function (_data) {
+}).then(function (_data) {
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
@@ -92,9 +92,9 @@ facebookFactory.getEventsFromPageById({
 facebookFactory.getPageById({
     pageId:"<PAGE_ID>",
     access_token:"<ACCESS_TOKEN>"
-}).success(function (_data) {
+}).then(function (_data) {
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```

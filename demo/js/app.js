@@ -7,41 +7,36 @@ app.controller('controller', ['$scope', 'facebookFactory', function($scope, face
         page:"147615681968982",
         limit:100,
         access_token:_access_token,
-    }).success(function(_data){
-        console.log("posts");
-        console.log(_data);
+    }).then(function(_data){
+        console.log("posts", _data);
     });
 
     facebookFactory.getPhotosFromPageById({
         page:"147615681968982",
         access_token:_access_token,
-    }).success(function(_data){
-        console.log("photos");
-        console.log(_data);
+    }).then(function(_data){
+        console.log("photos", _data);
     });
 
     facebookFactory.getVideosFromPageById({
         page:"147615681968982",
         access_token:_access_token,
-    }).success(function(_data){
-        console.log("videos");
-        console.log(_data);
+    }).then(function(_data){
+        console.log("videos", _data);
     });
 
     facebookFactory.getEventsFromPageById({
         page:"147615681968982",
         access_token:_access_token,
-    }).success(function(_data){
-        console.log("events");
-        console.log(_data);
+    }).then(function(_data){
+        console.log("events", _data);
     });
 
     facebookFactory.getPageById({
         page:"147615681968982",
         access_token:_access_token,
-    }).success(function(_data){
-        console.log("page");
-        console.log(_data);
+    }).then(function(_data){
+        console.log("page", _data);
     });
 
 }]);
