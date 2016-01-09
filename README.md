@@ -31,7 +31,7 @@ Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
 
 ```js
 facebookFactory.getPostsFromPageById({
-    pageId:"<PAGE_ID>",
+    page:"<PAGE_ID>",
     limit:"<LIMIT>", // (optional) valid values: 0-100 | default: 25
     until:"<UNTIL>", // (optional)
     since:"<SINCE>", // (optional)
@@ -65,7 +65,7 @@ facebookFactory.getPhotosFromPageById({
 
 ```js
 facebookFactory.getVideosFromPageById({
-    pageId:"<PAGE_ID>",
+    page:"<PAGE_ID>",
     limit:"<LIMIT>", // (optional) valid values: 0-100 | default: 25
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
@@ -81,7 +81,7 @@ facebookFactory.getVideosFromPageById({
 
 ```js
 facebookFactory.getEventsFromPageById({
-    pageId:"<PAGE_ID>",
+    page:"<PAGE_ID>",
     limit:"<LIMIT>", // (optional) valid values: 0-100 | default: 25
     before:"<BEFORE>", // (optional)
     after:"<AFTER>", // (optional)
@@ -97,7 +97,7 @@ facebookFactory.getEventsFromPageById({
 
 ```js
 facebookFactory.getPageById({
-    pageId:"<PAGE_ID>",
+    page:"<PAGE_ID>",
     access_token:"<ACCESS_TOKEN>"
 }).then(function (_data) {
     //on success
