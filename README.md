@@ -1,7 +1,7 @@
 **angular-facebook-api-factory** is an angularjs module with a facebook api factory.
 
-[![npm version](https://badge.fury.io/js/angular-facebook-api-factory.png)](https://badge.fury.io/js/angular-facebook-api-factory)
-[![Bower version](https://badge.fury.io/bo/angular-facebook-api-factory.png)](https://badge.fury.io/bo/angular-facebook-api-factory)
+[![npm version](https://badge.fury.io/js/angular-facebook-api-factory.svg)](https://badge.fury.io/js/angular-facebook-api-factory)
+[![Bower version](https://badge.fury.io/bo/angular-facebook-api-factory.svg)](https://badge.fury.io/bo/angular-facebook-api-factory)
 
 Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
 
